@@ -63,8 +63,11 @@ GEM
     multi_json (1.7.9)
     net-http-digest_auth (1.2)
     net-http-persistent (2.6)
+    nokogiri (1.5.2)
     nokogiri (1.5.2-x86-mingw32)
     ntlm-http (0.1.1)
+    pg (0.14.1)
+    pg (0.14.1-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -81,6 +84,11 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.1)
+    rails_stdout_logging (0.0.1)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -113,6 +121,7 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     unf (0.0.5)
       unf_ext
+    unf_ext (0.0.4)
     unf_ext (0.0.4-x86-mingw32)
     webrobots (0.0.13)
 
@@ -124,7 +133,9 @@ DEPENDENCIES
   jquery-rails
   mechanize
   nokogiri
+  pg
   rails (= 3.2.13)
+  rails_12factor
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
