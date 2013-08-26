@@ -1,0 +1,112 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "utf-8";
+/* CSS Document */
+*, *:active, *:focus {
+    outline: 0 none; margin:0px; padding:0px;
+}
+body {
+    background: #2C4762;
+    font: 14px/1.4 calibri;
+}
+
+#header { 
+		width:102%; color:#f2f2f7; 
+		background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#111));
+		background: -moz-linear-gradient(top,#333,#111);
+		background: transparent	9;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333',endColorstr='#111111');
+		height:40px;
+		margin-left:-18px;
+		margin-top:-10px;
+		margin-bottom:30px;
+	}
+	#header1 {
+		width:950px; padding-top:5px; position:relative; font-size:18px;color:#f2f2f7;
+	}
+#divcontainer { width:950px; height:auto; height:auto;
+    background: none repeat scroll 0 0 #2C4762;
+    border-radius: 15px; padding:10px;
+    }
+
+#content_right { width:210px; margin-left:10px;}
+#content { padding:10px;  background-color:#fff;  }
+a {
+	text-decoration: none;
+	cursor:pointer;
+}
+a:hover { text-decoration:underline }
+img{ border:none;}
+.input_text
+{
+	width:200px;
+	height:25px; 
+	font-size:15px; 
+	float:left;
+	border:thin solid #ccc;
+	margin-bottom:5px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+}
+.text_me
+{
+	width:400px;
+	height:30px; 
+	font-size:16px;
+	border:thin solid #ccc;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+}
+.input_label
+{
+	position:static;
+	color:#999;
+	font-size:18px;
+	cursor:text;
+	margin-left:-395px;
+	font-style:italic;
+}
+button:hover { opacity: 1;}
+.button_me {
+    background:#8BAD68;
+    border: 1px solid #2A3F56;
+    border-radius: 3px ;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(255, 255, 255, 0.7) inset;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 16px;
+	padding:4px 7px;
+    font-weight: bold;
+    opacity: 0.9; 
+	text-align:center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.37);
+    margin:5px;
+}
+
+.message_question
+{
+	background-color:#EEF;
+	padding:2px;
+	width:100%;
+	border:thin solid #eee;
+	border-radius: 15px 0px 15px 0px;
+	margin-bottom:5px;
+}
+.message_answer
+{
+	background-color:#F9FFff;
+	border:thin solid #eee;
+	padding:2px;
+	border-radius:0px 15px 0px 15px;
+	margin-bottom:5px;
+	color:green;
+}
+
+.right_section{-webkit-font-smoothing:antialiased;list-style-type:none;border:1px solid; border-color:rgba(0,0,0,.09) !important; -webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px; margin-bottom:10px; border-color:  #253d54; -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.05); color:#333;  padding: 7px;}
+
+
+.sub { font: 500 11px "Times New Roman", Times, serif; margin-top:5px; }
+.heading { COLOR: #555; font-size:17px; font-weight:bold; }
+.normal{ font-size:14px; padding-top:5px}

@@ -1,0 +1,18 @@
+
+	<table width="100%" class="heading"><tr>
+		<td width="100">Store</td>
+		<td width="80">Price</td>
+		<td width="140">Delivery Time</td>
+		<td width="100">Details</td>
+		<td width="100">Buy Now</td>
+	</tr></table>
+	<hr/>
+	<% @site.each do |val| %>
+		<table width="100%" class="heading"><tr>
+		<td width="100"><img src="<%= val[1] %>" /></td>
+		<td width="80"><%= val[2] %></td>
+		<td width="140"><%= val[3] %></td>
+		<td width="100"><%= val[4] %></td>
+		<td width="100"><a href="<%= val[0] %>" target="_blank" > <img alt="Buy Now" src="http://c0028655.cdn1.cloudfiles.rackspacecloud.com/gotostorebtn.png"></a></td>
+	</tr></table>
+	<% end %>

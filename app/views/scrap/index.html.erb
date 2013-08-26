@@ -1,0 +1,42 @@
+<table class='message_question' ><tr valign='top'>
+    <td width='65'><a href='#'><img width='60' onerror='onImgError(this)' src='<%= @imglink%>' /></a></td>
+    <td >
+      <div class='heading'><a href='#'> <%= @title%> </a></div>
+      <div class='sub' style='font-family: cambria; font-size: 12px;'>
+        <table width='450'>
+          <tr>
+            <td width='100'>MRP : <%= @mrp%></td>
+            <td width='160'>Author : <%= @author%></td>
+            <td>Publisher : <%= @publisher%></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+</tr></table>
+<input type="text" id="isbn" value="<%= @isbn%>" style="display:none;" />
+<div id="priceTable" class="right_section" align="left">
+	<img src="/assets/ajax-loader.gif"><br/>
+	<b id="loading" style="display: none">Searching across all major bookstores. It will take few seconds. </b>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	getSite();
+});
+	function getSite()
+	{
+		$('#loading').show();
+		val = document.getElementById('isbn').value;
+		$.get('/scrap/getbook',{'isbn':val},function(response){
+			$('#priceTable').html(response);
+			$('#loading').hide();
+		});
+	}
+	function onImgError(source)
+	{
+	source.src = "http://img1.flixcart.com/img/thumb/book.jpg";
+	// disable onerror to prevent endless loop
+	source.onerror = "";
+	return true;
+	}
+</script>
